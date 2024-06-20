@@ -1,0 +1,258 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(34, 34, 34);
+}
+.header{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(34, 34, 34);
+}
+.logo{
+    color: #FFC300;
+    width: 50%;
+    height: 80px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+nav{
+    height: 80px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul{
+    height: 30px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+li a{
+    color: aliceblue;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 5px;
+    transition: 0.5s ease-out;
+}
+li a:hover, li a.active {
+    background-color: #FFC300;
+    color: rgb(34, 34, 34);
+    box-shadow: 0 0 1rem #FFC300;
+}
+#Home{
+    background: transparent;
+    color: aliceblue;
+    padding-top: 100px;
+    padding-left: 150px;
+}
+h1{
+   font-size: 80px;
+   font-weight: 600;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+h2 span{
+    color: #FFC300;
+}
+p{
+    font-size: 25px;
+    margin-top: 30px;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    background: transparent;
+    border: 2px solid #FFC300;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #FFC300;
+    margin: 3rem 1.5rem 3rem 0rem;
+    transition: 0.5s ease;
+}
+.social-media a:hover{
+    background-color: #FFC300;
+    color: rgb(34, 34, 34);
+    box-shadow: 0 0 1rem #FFC300;
+}
+#About-Me{
+    padding-top: 150px;
+    padding-left: 600px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+}
+#About-Me p{
+    font-size: 22px;
+}
+#About-Me h1 span{
+    color: #FFC300;
+}
+#About-Me p span{
+    color: #FFC300;
+}
+#Portfolio{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: block;
+    justify-content: center;
+}
+.head {
+    color: aliceblue;
+    padding-left: 500px;
+    margin-bottom: 20px;
+}
+.head span{
+    color: #FFC300;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 2px #FFC300;
+    overflow: hidden;
+    
+}
+.portfolio-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+.portfolio-box .portfolio-text1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background : linear-gradient(rgba(0, 0, 0, .5), #FFC300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+.portfolio-box:hover .portfolio-text1{
+    transform: translateY(0);
+}
+.portfolio-text1 h2{
+    color: white;
+}
+.services{
+    display: flex;
+    justify-content: space-evenly;
+}
+.dev{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: background-color 0.75s ease;
+}
+.dev:hover{
+    background-color: #FFC300;
+    color: rgb(34, 34, 34);
+    box-sizing: 410px 410px;
+    box-shadow: 0 0 1rem #FFC300;
+    border-color: white;
+}
+.icon{
+  color: white;
+}
+.text{
+    margin-left: 15px;
+}
+.text h2{
+    margin-left: 60px;
+}
+.text p{
+    font-size: 20px;
+    margin-top: 60px;
+}
+ .contact-us{
+    
+    text-align: center;
+}
+.contact-us h1{
+    color: white;
+    font-size: 50px;
+    margin-top: 80px;
+} 
+.contact-us h1 span{
+    color: #FFC300;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: #FFC300;
+    padding: 20px 100px 30px 100px;
+    margin: 100px 450px 0px 450px;
+    border-radius: 10px;
+}
+form .input-text{
+    padding: 10px;
+}
+form .input-text #name{
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+form .text-area #name{
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 20px;
+}
+form .fillup button{
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFC300;
+    box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+}
+.footer{
+    background-color: black;
+    color: #FFC300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
